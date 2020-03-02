@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace jls\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use jls\Site;
 class HomeController extends Controller
 {
     /**
@@ -23,6 +23,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $sites = Site::all();
+        return view('sites.read', compact('sites'));
     }
 }

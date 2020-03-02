@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Jls online'),
 
     /*
     |--------------------------------------------------------------------------
@@ -154,11 +154,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        jls\Providers\AppServiceProvider::class,
+        jls\Providers\AuthServiceProvider::class,
+        // jls\Providers\BroadcastServiceProvider::class,
+        jls\Providers\EventServiceProvider::class,
+        jls\Providers\RouteServiceProvider::class,
 
     ],
 

@@ -22,3 +22,15 @@ Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+Route::resource('/sites','SiteController');
+Route::resource('/users','UserController');
+
+
+
+Route::get('imagem/arquivo/{nome}', [
+    'as' => 'imagem.file',
+    'uses' => 'ImagemController@getImagemFile'
+]);
