@@ -1,6 +1,5 @@
 <!doctype html>
-<html lang="en">
-
+<html lang="{{ app()->getLocale() }}">
     <head>
         <title>:: Lucid :: Home</title>
         <meta charset="utf-8">
@@ -143,7 +142,7 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="page-login.html" class="icon-menu"><i class="icon-login"></i></a>
+                                    <a href="/login" class="icon-menu"><i class="icon-login"></i></a>
                                 </li>
                             </ul>
                         </div>
